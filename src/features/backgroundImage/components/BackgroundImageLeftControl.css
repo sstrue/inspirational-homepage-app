@@ -1,0 +1,7 @@
+.btn {
+    border: none;
+    background-color: transparent;
+    font-size: 65px;
+    transform: scaleX(0.6);
+    color: white;
+}

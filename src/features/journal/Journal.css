@@ -1,0 +1,27 @@
+.journal-container {
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2% 20% 5% 20%;
+    padding: 2%;
+    width: 64%;
+    height: max-content;
+    background: hsla(0,0%,100%,.2);
+    box-shadow: 0 8px 32px 0 rgb(102 103 112 / 37%);
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 1px solid hsla(0,0%,100%,.18);
+    background-color: rgba(102, 102, 102, 0.28);
+}
+
+.journal-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 200;
+    margin-bottom: 20px;
+} 

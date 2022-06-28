@@ -1,56 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React from "react";
+import BackgroundImage from "./features/backgroundImage/BackgroundImage";
+import Weather from "./features/weather/Weather";
+import Quote from "./features/quote/Quote";
+import Error from "./features/error/Error";
+import Journal from "./features/journal/Journal";
+import BackgroundImageLeftControl from "./features/backgroundImage/components/BackgroundImageLeftControl";
+import BackgroundImageRightControl from "./features/backgroundImage/components/BackgroundImageRightControl";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
+      <div className="backdrop">
+        <BackgroundImage />
+      </div>
+      <header>
+        <div className="weather-top">
+          <Error />
+          <Weather />
+        </div>       
       </header>
+      <aside className="left-wallpaper-control wallpaper-control">
+        <BackgroundImageLeftControl />
+      </aside>
+      <main>
+        <div className="body">
+          <Journal />
+        </div>
+      </main>
+      <aside className="right-wallpaper-control wallpaper-control">
+        <BackgroundImageRightControl />
+      </aside>
+      <footer>
+        <div className="quote-end">
+          <Quote />
+        </div>
+      </footer>
     </div>
   );
 }

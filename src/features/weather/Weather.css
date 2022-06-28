@@ -1,0 +1,10 @@
+.weather {
+    color: #fff;
+    width: auto;
+}
+
+.temperature-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
